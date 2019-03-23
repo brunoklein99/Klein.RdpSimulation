@@ -21,14 +21,11 @@ namespace Klein.RdpSimulation
             while (true)
             {
                 net.Draw(step++);
-                if (net.CanStep())
-                {
-                    net.Step();
-                }
-                else
+                if (!net.CanStep())
                 {
                     break;
                 }
+                net.Step();
             }
         }
     }

@@ -1,0 +1,128 @@
+{
+  "Places": [
+    {
+      "Name": "p1",
+      "Weights": 2
+    },
+    {
+      "Name": "p2",
+      "Weights": 0
+    },
+    {
+      "Name": "p3",
+      "Weights": 2
+    },
+    {
+      "Name": "p4",
+      "Weights": 0
+    },
+    {
+      "Name": "p5",
+      "Weights": 5
+    },
+    {
+      "Name": "p6",
+      "Weights": 0
+    },
+    {
+      "Name": "p7",
+      "Weights": 0
+    },
+    {
+      "Name": "p8",
+      "Weights": 0
+    }
+  ],
+  "Transitions": [
+    {
+      "Name": "t1",
+      "Arcs": [
+        {
+          "Direction": "Incoming",
+          "Weight": 1,
+          "PlaceName": "p1"
+        },
+        {
+          "Direction": "Outgoing",
+          "Weight": 1,
+          "PlaceName": "p2"
+        }
+      ]
+    },
+    {
+      "Name": "t2",
+      "Arcs": [
+        {
+          "Direction": "Incoming",
+          "Weight": 3,
+          "PlaceName": "p5"
+        },
+        {
+          "Direction": "Incoming",
+          "Weight": 1,
+          "PlaceName": "p2"
+        },
+        {
+          "Direction": "Incoming",
+          "Weight": 2,
+          "PlaceName": "p3"
+        },
+        {
+          "Direction": "Outgoing",
+          "Weight": 1,
+          "PlaceName": "p4"
+        }
+      ]
+    },
+    {
+      "Name": "t3",
+      "Arcs": [
+        {
+          "Direction": "Incoming",
+          "Weight": 1,
+          "PlaceName": "p4"
+        },
+        {
+          "Direction": "Outgoing",
+          "Weight": 1,
+          "PlaceName": "p7"
+        },
+        {
+          "Direction": "Outgoing",
+          "Weight": 1,
+          "PlaceName": "p6"
+        },
+        {
+          "Direction": "Outgoing",
+          "Weight": 2,
+          "PlaceName": "p3"
+        }
+      ]
+    },
+    {
+      "Name": "t4",
+      "Arcs": [
+        {
+          "Direction": "Incoming",
+          "Weight": 1,
+          "PlaceName": "p7"
+        },
+        {
+          "Direction": "Incoming",
+          "Weight": 1,
+          "PlaceName": "p6"
+        },
+        {
+          "Direction": "Outgoing",
+          "Weight": 1,
+          "PlaceName": "p8"
+        },
+        {
+          "Direction": "Outgoing",
+          "Weight": 3,
+          "PlaceName": "p5"
+        }
+      ]
+    }
+  ]
+}
